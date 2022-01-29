@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import PageStart3 from "./components/PageStart3";
+import Navbar3 from "./components/Navbar3";
+import Skills from "./components/Skills";
+import About from "./components/About";
+import Section2 from "./components/Section2";
+import Questions from "./components/Questions";
+import Footer1 from "./components/Footer1";
 
 function App() {
+  AOS.init();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar3 />
+      <PageStart3 />
+      <Skills />
+      <Section2 />
+      <About />
+      <Questions />
+      <Footer1 />
     </div>
   );
 }

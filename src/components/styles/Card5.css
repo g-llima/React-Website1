@@ -1,0 +1,47 @@
+.card5 {
+  width: 300px;
+  border-radius: 5px;
+  padding: 3rem 2rem;
+  transition: all 0.2s;
+  bottom: 0px;
+  position: relative;
+  cursor: pointer;
+  border-right: 1px solid #dbdbdb;
+}
+.card5:last-child {
+  border: none;
+}
+.card5__content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #17252a;
+  transition: all 0.2s;
+  bottom: 0;
+  position: relative;
+  text-align: center;
+}
+.car5Icon {
+  font-size: 2.5rem;
+  width: 26px;
+  color: #2aafa9;
+  transition: all 0.2s;
+  margin: 0 auto;
+}
+.card5__content__title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+.card5:hover {
+  bottom: 10px;
+}
+.card5:hover .car5Icon {
+  transform: scale(1.5);
+}
+@media only screen and (max-width: 768px) {
+  .card5 {
+    border-right: none;
+    border-bottom: 1px solid #dbdbdb;
+  }
+}

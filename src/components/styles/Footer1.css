@@ -1,0 +1,107 @@
+.footer1 {
+  background-color: #def2f1;
+  color: #172521;
+  width: 100%;
+  padding: 5rem;
+  position: relative;
+  bottom: 0;
+}
+.footer1__content {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+.footer1__content__texts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer1__content__texts__about__logo {
+  font-size: 2rem;
+  color: #3aafa9;
+}
+.footer1__content__texts__join {
+  padding-left: 2rem;
+}
+.footer1__content__texts__about__description {
+  margin: 2rem 0;
+  color: #535353;
+  line-height: 25px;
+}
+.footer1__content__texts__join__description {
+  margin: 2rem 0;
+  color: #535353;
+  line-height: 25px;
+}
+.footer1__content__texts__join__form {
+  display: flex;
+}
+.footer1__content__texts__join__form__input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #3aafa9;
+}
+.footer1__content__texts__join__form__input__email {
+  padding: 1rem 10px 1rem 3rem;
+  background-color: transparent;
+  color: #172521;
+  border: none;
+  outline: none;
+}
+.footer1__content__texts__join__form__input__email::placeholder {
+  color: #535353;
+}
+.fa-envelope {
+  position: absolute;
+  font-size: 1.5rem;
+  margin-left: 10px;
+  color: #3aafa9;
+}
+.footer1__content__texts__join__form__btn {
+  padding: 0 2rem;
+  background-color: #3aafa9;
+  transition: all 0.3s;
+  border: none;
+  color: whitesmoke;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.footer1__content__texts__join__form__btn:hover {
+  background-color: #172521;
+}
+.footer1__content__copyright {
+  color: #535353;
+  width: 320px;
+  text-align: center;
+  margin-top: 2rem;
+}
+@media only screen and (max-width: 1024px) {
+  .footer1__content__texts__about__logo {
+    font-size: 1.5rem;
+  }
+  .footer1__content__texts__about__description {
+    font-size: 12px;
+  }
+  .footer1__content__texts__join__description {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 880px) {
+  .footer1__content__texts {
+    flex-direction: column;
+  }
+  .footer1__content__texts__join {
+    padding-left: 0;
+  }
+  .footer1__content__texts__join__form {
+    justify-content: center;
+  }
+  .footer1__content__texts__join__form__input__email {
+    padding: 1rem 1rem 1rem 3rem;
+  }
+  .footer1__content__texts__join__form__btn {
+    padding: 0 0.2rem;
+  }
+}

@@ -1,0 +1,115 @@
+.navbar3 {
+  width: 100%;
+  position: fixed;
+  transition: all 0.5s;
+  animation: 1s appearHeader;
+  z-index: 99;
+}
+.navbar3__content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.navbar3__content__logo {
+  color: white;
+  transition: all 0.3s;
+}
+.navbar3__content__items {
+  display: flex;
+}
+.navbar3__content__items__item {
+  margin: 0 3rem;
+  letter-spacing: 2px;
+  padding: 10px 0;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+.navbar3__content__items__item:hover {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+.navbar3Scroll {
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(155, 155, 155, 0.5);
+}
+.navbar3ScrollItem {
+  color: #3aafa9;
+}
+.navbar3ScrollItem:hover {
+  border-top: 2px solid #3aafa9;
+  border-bottom: 2px solid #3aafa9;
+}
+.navbar3__content__icon {
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+  margin-right: 2rem;
+  transition: all 0.5s ease-in-out;
+}
+.navbarMobileActive {
+  color: #3aafa9;
+}
+.nav3Current {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+.nav3CurrentScroll {
+  border-top: 2px solid #3aafa9;
+  border-bottom: 2px solid #3aafa9;
+}
+@media only screen and (max-width: 768px) {
+  .navbar3__content__icon {
+    display: block;
+    z-index: 99;
+  }
+  .nav3CurrentScroll {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+  }
+  .navbar3__content__items {
+    position: fixed;
+    text-align: center;
+    flex-direction: column;
+    visibility: hidden;
+    width: 100%;
+    max-width: 320px;
+    height: 700px;
+    right: -40rem;
+    opacity: 0;
+    top: 57px;
+    padding-top: 2rem;
+    transition: all 0.5s;
+  }
+  .nav3MobileActive {
+    position: fixed;
+    visibility: visible;
+    opacity: 1;
+    background-color: #3aafa9;
+    border-radius: 45px 8px 15px 430px;
+    right: 0;
+  }
+  .navbar3__content__items__item {
+    width: 100px;
+    color: white;
+    margin: 3rem auto;
+  }
+  .navbar3__content__logo {
+    z-index: 99;
+  }
+}
+@keyframes appearHeader {
+  from {
+    opacity: 0;
+    top: -2rem;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}

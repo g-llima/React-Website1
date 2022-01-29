@@ -1,0 +1,19 @@
+.questions {
+  width: 100%;
+  padding-bottom: 5rem;
+  background-color: #17252a;
+}
+.questions__content {
+  display: flex;
+  max-width: 1400px;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+}
+.questions__title {
+  text-align: center;
+  font-size: calc(2rem + 1vw);
+  text-transform: uppercase;
+  color: #feffff;
+  padding: 2rem 0;
+}
