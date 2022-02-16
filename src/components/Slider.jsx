@@ -18,7 +18,7 @@ const slidersList = [
 
 function Slider() {
   return (
-    <div className="slider" data-aos="fade-up">
+    <div className="slider" >
       {slidersList.map((item, key) => (
         <div className="slider__content" key={key}>
           <div className="slider__texts">

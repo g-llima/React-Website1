@@ -5,8 +5,16 @@
 .slider__content {
   display: flex;
   flex-direction: column;
-  transition: all 0.3s;
+
   padding: 2rem 0;
+}
+.slider__content,
+.slider__container,
+.slider__container__fill {
+  transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -moz-transition: all 03s;
+  -webkit-transition: all 0.3s;
 }
 .slider__texts {
   display: flex;
@@ -27,14 +35,10 @@
   height: 10px;
   border-radius: 10px;
   position: relative;
-
-  transition: all 0.3s;
 }
 .slider__container__fill {
   height: 100%;
   border-radius: 10px;
-  transition: all 0.3s;
-
   background-color: #3aafa9;
 }
 .slider__container::before {

@@ -1,6 +1,4 @@
 import "./App.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import PageStart3 from "./components/PageStart3";
 import Navbar3 from "./components/Navbar3";
 import Skills from "./components/Skills";
@@ -10,7 +8,6 @@ import Questions from "./components/Questions";
 import Footer1 from "./components/Footer1";
 
 function App() {
-  AOS.init();
   return (
     <div className="App">
       <Navbar3 />

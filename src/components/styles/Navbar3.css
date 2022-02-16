@@ -2,6 +2,9 @@
   width: 100%;
   position: fixed;
   transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
   animation: 1s appearHeader;
   z-index: 99;
 }
@@ -15,7 +18,10 @@
 }
 .navbar3__content__logo {
   color: white;
-  transition: all 0.3s;
+  transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
 }
 .navbar3__content__items {
   display: flex;
@@ -27,6 +33,9 @@
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
   transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
   color: white;
 }
 .navbar3__content__items__item:hover {
@@ -51,6 +60,9 @@
   display: none;
   margin-right: 2rem;
   transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
 }
 .navbarMobileActive {
   color: #3aafa9;
@@ -85,6 +97,9 @@
     top: 57px;
     padding-top: 2rem;
     transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
   }
   .nav3MobileActive {
     position: fixed;

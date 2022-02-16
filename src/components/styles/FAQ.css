@@ -6,7 +6,13 @@
   max-height: 0;
   padding: 0 10px;
   color: white;
+}
+.faq__content__questions__question__description,
+.faqIcon {
   transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
 }
 .faqOpened {
   max-height: 250px;
@@ -28,11 +34,17 @@
   font-weight: bold;
   color: white;
   transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
 }
 .faqIcon {
   float: right;
-  transition: all 0.5s;
 }
 .faqRotateIcon {
   transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
 }

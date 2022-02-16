@@ -6,10 +6,9 @@ function Card5({
   description = "Ut enim ad minim veniam, quis nostrud exercitation.",
   icon = "fas fa-mobile-alt",
   flipType= "up",
-  delay = 0
 }) {
   return (
-    <div className="card5" data-aos={`flip-${flipType}`} data-aos-delay={delay}>
+    <div className="card5" data-aos={`flip-${flipType}`}>
       <div className="card5__content">
         <i className={icon + " car5Icon"}></i>
         <h1 className="card5__content__title">{title}</h1>

@@ -1,12 +1,11 @@
 .card5 {
   width: 300px;
-  border-radius: 5px;
   padding: 3rem 2rem;
   transition: all 0.2s;
   bottom: 0px;
   position: relative;
   cursor: pointer;
-  border-right: 1px solid #dbdbdb;
+  border-right: 1px solid rgb(219, 219, 219);
 }
 .card5:last-child {
   border: none;
@@ -16,16 +15,21 @@
   display: flex;
   flex-direction: column;
   color: #17252a;
-  transition: all 0.2s;
   bottom: 0;
   position: relative;
   text-align: center;
+}
+.card5__content,
+.car5Icon {
+  transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
 }
 .car5Icon {
   font-size: 2.5rem;
   width: 26px;
   color: #2aafa9;
-  transition: all 0.2s;
   margin: 0 auto;
 }
 .card5__content__title {
@@ -38,6 +42,10 @@
 }
 .card5:hover .car5Icon {
   transform: scale(1.5);
+  -o-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
 }
 @media only screen and (max-width: 768px) {
   .card5 {
