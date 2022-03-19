@@ -39,8 +39,17 @@
   color: white;
 }
 .navbar3__content__items__item:hover {
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid transparent;
+  position: relative;
+}
+.navbar3__content__items__item:hover::after {
+  content: "";
+  width: 80%;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  bottom: -1px;
 }
 .navbar3Scroll {
   background-color: white;
@@ -50,8 +59,16 @@
   color: #3aafa9;
 }
 .navbar3ScrollItem:hover {
-  border-top: 2px solid #3aafa9;
-  border-bottom: 2px solid #3aafa9;
+  border-bottom: 2px solid transparent;
+}
+.navbar3ScrollItem:hover::after {
+  content: "";
+  width: 80%;
+  height: 1px;
+  background-color: #3aafa9;
+  position: absolute;
+  right: 0;
+  bottom: -1px;
 }
 .navbar3__content__icon {
   color: white;
@@ -68,12 +85,30 @@
   color: #3aafa9;
 }
 .nav3Current {
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid transparent;
+  position: relative;
+}
+.nav3Current::after {
+  content: "";
+  width: 80%;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  bottom: -1px;
 }
 .nav3CurrentScroll {
-  border-top: 2px solid #3aafa9;
-  border-bottom: 2px solid #3aafa9;
+  border-bottom: 2px solid transparent;
+  position: relative;
+}
+.nav3CurrentScroll::after {
+  content: "";
+  width: 80%;
+  height: 1px;
+  background-color: #3aafa9;
+  position: absolute;
+  right: 0;
+  bottom: -1px;
 }
 @media only screen and (max-width: 768px) {
   .navbar3__content__icon {

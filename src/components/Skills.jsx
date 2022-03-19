@@ -1,15 +1,15 @@
 import React from "react";
-import Card5 from "./Card5";
+import Know_Card from "./Know_Card";
 
 import "./styles/Skills.css";
 
 function Skills() {
   return (
-    <section className="skills" id={"skills"}>
-      <Card5 icon="fab fa-html5" title="HTML"/>
-      <Card5 icon="fab fa-css3-alt" title="CSS3" />
-      <Card5 icon="fab fa-js" title="JavaScript"/>
-      <Card5 icon="fab fa-react" title="REACT" />
+    <section className="skills" id="skills">
+      <Know_Card icon="fa-brands fa-html5" title="HTML" />
+      <Know_Card icon="fa-brands fa-css3-alt" title="CSS3" />
+      <Know_Card icon="fa-brands fa-js" title="JavaScript" />
+      <Know_Card icon="fa-brands fa-react" title="REACT" />
     </section>
   );
 }

@@ -20,39 +20,42 @@ const questionsList = [
 ];
 
 function FAQ({ questions = questionsList }) {
-  const [faqClicked, setfaqClicked] = useState(0);
+  const [faqClicked, setfaqClicked] = useState(-1);
 
   return (
     <section className="faq">
       <div className="faq__content">
         <ul className="faq__content__questions">
-          {questions.map((key, item) => (
-            <li className="faq__content__questions__question" key={item}>
+          {/* QUESTIONS ITEMS */}
+          {questions.map((item, index) => (
+            <li className="faq__content__questions__question" key={index}>
               <button
-                className={`faq__content__questions__question__btnTitle ${
-                  faqClicked === key ? "faqSelected" : null
-                }`}
-                onClick={() => {
-                  if (faqClicked != key) {
-                    setfaqClicked(key);
-                  } else {
-                    setfaqClicked(0);
-                  }
-                }}
+                className={`
+                faq__content__questions__question__btnTitle 
+                ${faqClicked === index ? "faqSelected" : null}`}
+                // SET THE "faqClicked" USESTATE TO THE ELEMENT INDEX
+                onClick={() =>
+                  faqClicked !== index
+                    ? setfaqClicked(index)
+                    : setfaqClicked(-1)
+                }
               >
-                {questions[item].title}
+                {/* QUESTION TITLE */}
+                {item.title}
+
+                {/* QUESTION RIGHT ARROW */}
                 <i
-                  className={`fas fa-chevron-up faqIcon ${
-                    faqClicked === key ? "faqRotateIcon" : null
-                  }`}
+                  className={`fas fa-chevron-up faqIcon 
+                  ${faqClicked === index ? "faqRotateIcon" : null}`}
                 ></i>
               </button>
+
+              {/* QUESTION INNER TEXT */}
               <p
-                className={`faq__content__questions__question__description ${
-                  faqClicked === key ? "faqOpened" : null
-                }`}
+                className={`faq__content__questions__question__description 
+                ${faqClicked === index ? "faqOpened" : null}`}
               >
-                {questions[item].description}
+                {item.description}
               </p>
             </li>
           ))}

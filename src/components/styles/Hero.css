@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@700&family=Outfit:wght@300;400&family=Roboto:wght@700&display=swap");
-.pagestart3 {
+.hero {
   width: 100%;
   height: 100vh;
   background-color: #3aafa9;
@@ -12,34 +12,34 @@
   align-items: center;
   justify-content: center;
 }
-.pagestart3__content {
+.hero__content {
   max-width: 1400px;
   margin: 0 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.pagestart3__content__texts {
+.hero__content__texts {
   min-width: 300px;
 }
-.pagestart3__content__texts__mainText {
+.hero__content__texts__mainText {
   font-size: calc(2rem + 2vw);
   max-width: 700px;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif !important;
   position: relative;
-  animation: 1s pagestart3MainTextAppear;
+  animation: 1s heroMainTextAppear;
 }
-.pagestart3__content__texts__secondText {
+.hero__content__texts__secondText {
   position: relative;
   color: #def2f1;
   font-size: calc(1rem + 0.5vw);
   width: 80%;
   margin: 2rem 0;
 
-  animation: 1s pagestart3SecondTextAppear;
+  animation: 1s heroSecondTextAppear;
 }
-.pagestart3__content__texts__btn {
+.hero__content__texts__btn {
   position: relative;
   background-color: #17252a;
   padding: 1rem 2rem;
@@ -49,16 +49,16 @@
   border-radius: 50px;
   cursor: pointer;
 
-  animation: 1.5s pagestart3ButtonAppear;
+  animation: 1.5s heroButtonAppear;
 }
-.pagestart3__content__texts__btn,
+.hero__content__texts__btn,
 .fa-long-arrow-alt-right {
   transition: all 0.3s;
   -o-transition: all 0.3s;
   -moz-transition: all 03s;
   -webkit-transition: all 0.3s;
 }
-.pagestart3__content__texts__btn:hover {
+.hero__content__texts__btn:hover {
   transform: scale(1.1);
   -o-transform: scale(1.1);
   -ms-transform: scale(1.1);
@@ -66,44 +66,44 @@
   -webkit-transform: scale(1.1);
   background-color: #2c3b41;
 }
-.pagestart3__content__texts__btn:hover .fa-long-arrow-alt-right {
+.hero__content__texts__btn:hover .fa-long-arrow-alt-right {
   margin-left: 10px;
 }
 .fa-long-arrow-alt-right {
   margin-left: 5px;
   font-size: 1rem;
 }
-.pagestart3__content__img {
+.hero__content__img {
   position: relative;
   width: 80%;
   max-width: 600px;
 
-  animation: 1.5s pagestart3ImgAppear;
-  animation: 4s pagestart3ImgPuls infinite;
+  animation: 1.5s heroImgAppear;
+  animation: 4s heroImgPuls infinite;
 }
 @media only screen and (max-width: 950px) {
-  .pagestart3__content {
+  .hero__content {
     justify-content: center;
     flex-direction: column-reverse;
   }
-  .pagestart3__content__texts {
+  .hero__content__texts {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .pagestart3__content__texts__mainText {
+  .hero__content__texts__mainText {
     text-align: center;
   }
-  .pagestart3__content__texts__secondText {
+  .hero__content__texts__secondText {
     width: 100%;
     text-align: center;
   }
-  .pagestart3__content__img {
+  .hero__content__img {
     margin-bottom: 4rem;
-    animation: 1.5s pagestart3ImgAppearMobile;
+    animation: 1.5s heroImgAppearMobile;
   }
 }
-@keyframes pagestart3MainTextAppear {
+@keyframes heroMainTextAppear {
   from {
     top: 5rem;
     opacity: 0;
@@ -113,7 +113,7 @@
     opacity: 1;
   }
 }
-@keyframes pagestart3SecondTextAppear {
+@keyframes heroSecondTextAppear {
   0% {
     top: 5rem;
     opacity: 0;
@@ -127,7 +127,7 @@
     opacity: 1;
   }
 }
-@keyframes pagestart3ButtonAppear {
+@keyframes heroButtonAppear {
   0% {
     top: 5rem;
     opacity: 0;
@@ -141,7 +141,7 @@
     opacity: 1;
   }
 }
-@keyframes pagestart3ImgAppear {
+@keyframes heroImgAppear {
   0% {
     left: 5rem;
     visibility: hidden;
@@ -158,7 +158,7 @@
     opacity: 1;
   }
 }
-@keyframes pagestart3ImgAppearMobile {
+@keyframes heroImgAppearMobile {
   0% {
     top: 5rem;
     visibility: hidden;
@@ -175,7 +175,7 @@
     opacity: 1;
   }
 }
-@keyframes pagestart3ImgPuls {
+@keyframes heroImgPuls {
   0% {
     bottom: 0;
   }

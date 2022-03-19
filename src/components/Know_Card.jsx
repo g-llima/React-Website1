@@ -1,11 +1,11 @@
 import React from "react";
 import "./styles/Card5.css";
 
-function Card5({
+function Know_Card({
   title = "Perfect Responsive",
   description = "Ut enim ad minim veniam, quis nostrud exercitation.",
   icon = "fas fa-mobile-alt",
-  flipType= "up",
+  flipType = "up", // FLIP WHEN RENDER
 }) {
   return (
     <div className="card5" data-aos={`flip-${flipType}`}>
@@ -18,4 +18,4 @@ function Card5({
   );
 }
 
-export default Card5;
+export default Know_Card;
