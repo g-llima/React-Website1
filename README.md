@@ -29,6 +29,6 @@ Setting up your project locally.
 ### Preview
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/78111347/118603849-9cb9e994-2f7c-4ded-9926-803ff08a86e0.gif" alt="Website preview"/>
+  <img src="https://user-images.githubusercontent.com/78111347/159100354-844b13eb-8495-4f66-91b3-82a1a10b21ac.gif" alt="Website preview"/>
   <p>Live preview: <a href="https://happy-golick-bda539.netlify.app" target="_blank">here</a></p>
 </div>
